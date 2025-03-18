@@ -95,14 +95,10 @@ namespace Calculadora.ConsoleApp
                 }
 
                 Console.Write("Digite o Primeiro Número: ");
-                string strprimeiroNumero = Console.ReadLine();
-
-                decimal primeiroNumero = Convert.ToDecimal(strprimeiroNumero);
+                decimal primeiroNumero = Convert.ToDecimal(Console.ReadLine());
 
                 Console.Write("Digite o Segundo Número: ");
-                string strsegundoNumero = Console.ReadLine();
-
-                decimal segundoNumero = Convert.ToDecimal(strsegundoNumero);
+                decimal segundoNumero = Convert.ToDecimal(Console.ReadLine());
 
                 // Números Decimais (com Casa)
                 // Float - float resultadoFloat = 0.0f; - 8 Casas
