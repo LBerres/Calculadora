@@ -66,12 +66,6 @@ namespace Calculadora.ConsoleApp
 
                         Console.WriteLine("                                                        " + linhaDaTabuada);
                     }
-                    Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
-                    Console.WriteLine(" ");
-                    Console.WriteLine("                                             !Pressione Enter Para Continuar!");
-
-                    Console.ReadLine();
-                    continue;
                 }
 
                 else if (opcao == "6")
@@ -85,13 +79,22 @@ namespace Calculadora.ConsoleApp
                     for (int contador = 0; contador < contadorHistórico; contador++)
                     {
                         Console.WriteLine("                                                        " + históricoOperações[contador]);
+                        break;
                     }
-                    Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
                     Console.WriteLine(" ");
-                    Console.WriteLine("                                             !Pressione Enter Para Continuar!");
+                    Console.WriteLine("                                      !Pressione - R Para Reiniciar / S Para Sair!                                      ");
 
-                    Console.ReadLine();
-                    continue;
+                    string opcaofinal1 = Console.ReadLine();
+
+                    if (opcaofinal1 == "R")
+                        continue;
+                    else if (opcaofinal1 == "r")
+                        continue;
+                    else if (opcaofinal1 == "S")
+                        break;
+                    else if (opcaofinal1 == "s")
+                        break;
+
                 }
 
                 Console.Write("Digite o Primeiro Número: ");
@@ -170,12 +173,21 @@ namespace Calculadora.ConsoleApp
                 Console.WriteLine("                                                     Resultado: " + resultado.ToString("F2")); // Floating Points 2
                 Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
                 Console.WriteLine(" ");
-                Console.WriteLine("                                             !Pressione Enter Para Continuar!");
+                Console.WriteLine("                                      !Pressione - R Para Reiniciar / S Para Sair!                                      ");
 
-                Console.ReadLine();
+                string opcaofinal = Console.ReadLine();
+
+                if (opcaofinal == "R")
+                    continue;
+                else if (opcaofinal == "r")
+                    continue;
+                else if (opcaofinal == "S")
+                    break;
+                else if (opcaofinal == "s")
+                    break;
             }
 
-            
+
         }
     }
 }
